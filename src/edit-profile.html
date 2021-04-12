@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Billing details - Filtru Coffee</title>
+    <title>Edit profile - Filtru Coffee</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -214,8 +214,12 @@
 
       <header class="bg-white shadow-sm">
         <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-lg leading-6 font-semibold text-gray-900">Billing</h1>
-          <p class="leading-6 text-gray-500">Manage your payout</p>
+          <h1 class="text-lg leading-6 font-semibold text-gray-900">
+            Edit Profile
+          </h1>
+          <p class="leading-6 text-gray-500">
+            Change your personal profile details
+          </p>
         </div>
       </header>
       <main>
@@ -230,10 +234,10 @@
                 <div class="md:col-span-1">
                   <div class="px-4 sm:px-0">
                     <h3 class="text-lg font-medium leading-6 text-gray-900">
-                      Billing Address
+                      About you
                     </h3>
                     <p class="mt-1 text-sm text-gray-600">
-                      Enter your company's registered address
+                      Tell us about yourself
                     </p>
                   </div>
                 </div>
@@ -241,115 +245,88 @@
                   <div class="shadow rounded-xl bg-white sm:overflow-hidden">
                     <div class="px-4 py-5 space-y-6 sm:p-6">
                       <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-6 sm:col-span-3">
+                        <div class="col-span-6">
                           <label
-                            for="Adress Line 1"
+                            for="Name"
                             class="block text-sm font-medium text-gray-700"
                           >
-                            Address Line 1
+                            Name
                           </label>
                           <div class="mt-1">
                             <input
                               type="text"
-                              name="Address Line 1"
-                              id="Address Line 1"
-                              autocomplete="Address"
+                              name="Name"
+                              id="Name"
+                              autocomplete="Name"
                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                             />
                           </div>
                         </div>
-
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="Adress Line 2"
+                            for="Contact Email"
                             class="block text-sm font-medium text-gray-700"
                           >
-                            Adress Line 2
+                            Contact Email
                           </label>
                           <div class="mt-1">
                             <input
                               type="text"
-                              name="Adress Line 2"
-                              id="Adress Line 2"
-                              autocomplete="Adress Line 2"
+                              name="Contact Email"
+                              id="Contact Email"
+                              autocomplete="Contact Email"
                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
                             />
                           </div>
+                          <p class="mt-2 text-sm italic text-gray-500">
+                            Enter email address used for Orders notifications
+                          </p>
                         </div>
 
                         <div class="col-span-6 sm:col-span-3">
                           <label
-                            for="City"
+                            for="company_website"
                             class="block text-sm font-medium text-gray-700"
                           >
-                            City
+                            Website URL
                           </label>
-                          <div class="mt-1">
-                            <input
-                              type="text"
-                              name="City"
-                              id="City"
-                              autocomplete="City"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="County/State"
-                            class="block text-sm font-medium text-gray-700"
-                          >
-                            County/State
-                          </label>
-                          <div class="mt-1">
-                            <input
-                              type="text"
-                              name="County/State"
-                              id="County/State"
-                              autocomplete="County/State"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="City"
-                            class="block text-sm font-medium text-gray-700"
-                          >
-                            Country
-                          </label>
-                          <div class="mt-1">
-                            <select
-                              id="country"
-                              name="country"
-                              autocomplete="country"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                          <div class="mt-1 flex rounded-md shadow-sm">
+                            <span
+                              class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm"
                             >
-                              <option>United States</option>
-                              <option>Canada</option>
-                              <option>Mexico</option>
-                            </select>
+                              http://
+                            </span>
+                            <input
+                              type="text"
+                              name="company_website"
+                              id="company_website"
+                              class="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                              placeholder="www.example.com"
+                            />
                           </div>
                         </div>
 
-                        <div class="col-span-6 sm:col-span-3">
+                        <div class="col-span-6">
                           <label
-                            for="County/State"
+                            for="About your company"
                             class="block text-sm font-medium text-gray-700"
                           >
-                            Postal Code
+                            About your company
                           </label>
                           <div class="mt-1">
-                            <input
-                              type="text"
-                              name="Postal Code"
-                              id="Postal Code"
-                              autocomplete="Postal Code"
+                            <textarea
+                              id="about"
+                              name="about"
+                              rows="5"
                               class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                            />
+                              placeholder="you@example.com"
+                            ></textarea>
                           </div>
+                          <p class="mt-2 text-sm italic text-gray-500">
+                            Tell Filtru users about your approach to coffee,
+                            what makes your coffee unique and how did your
+                            company come about
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -369,10 +346,11 @@
                 <div class="md:col-span-1">
                   <div class="px-4 sm:px-0">
                     <h3 class="text-lg font-medium leading-6 text-gray-900">
-                      Bank Details
+                      Appearance
                     </h3>
                     <p class="mt-1 text-sm text-gray-600">
-                      Enter your bank accoutn details for BACS transfers
+                      Upload your logo, and set brand colours for your Filtru
+                      page
                     </p>
                   </div>
                 </div>
@@ -380,110 +358,102 @@
                   <div class="shadow rounded-xl bg-white sm:overflow-hidden">
                     <div class="px-4 py-5 space-y-6 sm:p-6">
                       <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-6 sm:col-span-3">
+                        <div class="col-span-6">
                           <label
-                            for="Account Holder"
                             class="block text-sm font-medium text-gray-700"
                           >
-                            Account Holder
+                            Upload Image
+                          </label>
+                          <div
+                            class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md"
+                          >
+                            <div class="space-y-1 text-center">
+                              <svg
+                                class="mx-auto h-12 w-12 text-gray-400"
+                                stroke="currentColor"
+                                fill="none"
+                                viewBox="0 0 48 48"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                  stroke-width="2"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                              <div class="flex text-sm text-gray-600">
+                                <label
+                                  for="file-upload"
+                                  class="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                                >
+                                  <span>Upload a file</span>
+                                  <input
+                                    id="file-upload"
+                                    name="file-upload"
+                                    type="file"
+                                    class="sr-only"
+                                  />
+                                </label>
+                                <p class="pl-1">or drag and drop</p>
+                              </div>
+                              <p class="text-xs text-gray-500">
+                                PNG, JPG, GIF up to 10MB
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-span-2">
+                          <label
+                            for="Background color"
+                            class="block text-sm font-medium text-gray-700"
+                          >
+                            Background color
                           </label>
                           <div class="mt-1">
                             <input
-                              type="text"
-                              name="Account Holder"
-                              id="Account Holder"
-                              autocomplete="Account Holder"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                              type="color"
+                              name="Background color"
+                              id="Background color"
+                              autocomplete="Background color"
+                              class="shadow-sm border h-8 block w-full focus:outline-none outline-none rounded-md"
                             />
                           </div>
                         </div>
 
-                        <div class="col-span-6 sm:col-span-3">
+                        <div class="col-span-2">
                           <label
-                            for="Bank Name"
+                            for="Accent Color"
                             class="block text-sm font-medium text-gray-700"
                           >
-                            Bank Name
+                            Accent Color
                           </label>
                           <div class="mt-1">
                             <input
-                              type="text"
-                              name="Bank Name"
-                              id="Bank Name"
-                              autocomplete="Bank Name"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                              type="color"
+                              name="Accent Color"
+                              id="Accent Color"
+                              autocomplete="Accent Color"
+                              class="shadow-sm border h-8 block w-full focus:outline-none outline-none rounded-md"
                             />
                           </div>
                         </div>
 
-                        <div class="col-span-6 sm:col-span-3">
+                        <div class="col-span-2">
                           <label
-                            for="IBAN / Account Number"
+                            for="Text Color"
                             class="block text-sm font-medium text-gray-700"
                           >
-                            IBAN / Account Number
+                            Text Color
                           </label>
                           <div class="mt-1">
                             <input
-                              type="text"
-                              name="IBAN / Account Number"
-                              id="IBAN / Account Number"
-                              autocomplete="IBAN / Account Number"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="Bank Address"
-                            class="block text-sm font-medium text-gray-700"
-                          >
-                            Bank Address
-                          </label>
-                          <div class="mt-1">
-                            <input
-                              type="text"
-                              name="Bank Address"
-                              id="Bank Address"
-                              autocomplete="Bank Address"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="Routing / ABA / Sort Code"
-                            class="block text-sm font-medium text-gray-700"
-                          >
-                            Routing / ABA / Sort Code
-                          </label>
-                          <div class="mt-1">
-                            <input
-                              type="text"
-                              name="Routing / ABA / Sort Code"
-                              id="Routing / ABA / Sort Code"
-                              autocomplete="Routing / ABA / Sort Code"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-span-6 sm:col-span-3 row-start-4">
-                          <label
-                            for="BIC / SWIFT Number"
-                            class="block text-sm font-medium text-gray-700"
-                          >
-                            BIC / SWIFT Number
-                          </label>
-                          <div class="mt-1">
-                            <input
-                              type="text"
-                              name="RBIC / SWIFT Number"
-                              id="BIC / SWIFT Number"
-                              autocomplete="BIC / SWIFT Number"
-                              class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                              type="color"
+                              name="Text Color"
+                              id="Text Color"
+                              autocomplete="Text Color"
+                              class="shadow-sm border h-8 block w-full focus:outline-none outline-none rounded-md"
                             />
                           </div>
                         </div>
