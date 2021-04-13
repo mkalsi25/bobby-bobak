@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sales Report - Filtru Coffee</title>
+    <title>Sales Report Summary - Filtru Coffee</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -224,52 +224,79 @@
       </header>
       <main>
         <div class="max-w-7xl mx-auto py-6 lg:py-8 sm:px-6 lg:px-8">
-          <form
-            action="/shipping-methods"
-            method="POST"
-            class="grid gap-6 lg:gap-8"
-          >
+          <div class="grid gap-6 lg:gap-8">
             <div>
-              <div class="md:grid md:grid-cols-3 md:gap-6">
+              <div class="md:grid md:grid-cols-4 md:gap-6">
                 <div class="md:col-span-1">
                   <div class="px-4 sm:px-0">
                     <h3 class="text-lg font-medium leading-6 text-gray-900">
-                      Add new member
+                      Summary
                     </h3>
                     <p class="mt-1 text-sm text-gray-600">
-                      Tell us about yourself
+                      See how much you'veearned
                     </p>
                   </div>
                 </div>
-                <div class="mt-5 md:mt-0 md:col-span-2 mx-4 md:mx-0">
+                <div class="mt-5 md:mt-0 md:col-span-3 mx-4 md:mx-0">
                   <div class="shadow rounded-xl bg-white sm:overflow-hidden">
                     <div class="px-4 py-5 bg-white rounded-xl space-y-6 sm:p-6">
+                      <div>
+                        <strong class="text-xl leading-6 text-gray-900">April 2021</strong>
+                        <p class="text-sm text-gray-600">1 April - 31 April</p>
+                      </div>
+
+                      <div class="border-t border-gray-200"></div>
                       <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="Contact Email"
-                            class="block text-sm font-medium text-gray-700"
-                            >Contact Email</label
+                        <div class="col-span-6 grid grid-cols-12 gap-6">
+                          <div
+                            class="flex justify-between col-span-8 row-start-2 sm:row-start-1"
                           >
-                          <input
-                            type="email"
-                            name="Contact Email"
-                            id="Contact Email"
-                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                          />
+                            <div class="grid text-center">
+                              <p class="text-sm text-gray-600">Orders</p>
+                              <h5
+                                class="text-sm font-medium leading-6 text-gray-900"
+                              >
+                                16
+                              </h5>
+                            </div>
+                            <div class="grid text-center">
+                              <p class="text-sm text-gray-600">SubTotal</p>
+                              <h5
+                                class="text-sm font-medium leading-6 text-gray-900"
+                              >
+                                250 GBP
+                              </h5>
+                            </div>
+                            <div class="grid text-center">
+                              <p class="text-sm text-gray-600">Tax</p>
+                              <h5
+                                class="text-sm font-medium leading-6 text-gray-900"
+                              >
+                                0 GBP
+                              </h5>
+                            </div>
+                            <div class="grid text-center">
+                              <p class="text-sm text-gray-600">
+                                Shipping
+                              </p>
+                              <h5
+                                class="text-sm font-medium leading-6 text-gray-900"
+                              >
+                                20 GBP
+                              </h5>
+                            </div>
+                            <div class="grid text-center">
+                              <p class="text-sm text-gray-600">
+                                Total
+                              </p>
+                              <h5
+                                class="text-sm font-medium leading-6 text-gray-900"
+                              >
+                                270 GBP
+                              </h5>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-span-6 sm:col-span-3">
-                          <label
-                            for="name"
-                            class="block text-sm font-medium text-gray-700"
-                            >Name</label
-                          >
-                          <input
-                            type="text"
-                            name="name"
-                            id="name"
-                            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
-                          />
                         </div>
                       </div>
                     </div>
@@ -284,92 +311,227 @@
               </div>
             </div>
 
-            <div>
-              <div class="md:grid md:grid-cols-3 md:gap-6">
-                <div class="md:col-span-1">
-                  <div class="px-4 sm:px-0">
-                    <h3 class="text-lg font-medium leading-6 text-gray-900">
-                      Add new member
-                    </h3>
-                    <p class="mt-1 text-sm text-gray-600">
-                      Tell us about yourself
-                    </p>
+            <div class="grid gap-6 lg:gap-8">
+              <div>
+                <div class="md:grid md:grid-cols-4 md:gap-6">
+                  <div class="md:col-span-1">
+                    <div class="px-4 sm:px-0">
+                      <h3 class="text-lg font-medium leading-6 text-gray-900">
+                        Orders
+                      </h3>
+                      <p class="mt-1 text-sm text-gray-600">
+                        See the breakdown of your orders
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div class="mt-5 md:mt-0 md:col-span-2 mx-4 md:mx-0">
-                  <div class="shadow rounded-xl bg-white sm:overflow-hidden">
-                    <div class="px-4 py-5 bg-white rounded-xl space-y-6 sm:p-6">
-                      <div class="grid grid-cols-6 gap-6">
-                        <div
-                          class="col-span-6 flex items-center justify-between"
-                        >
-                          <h3
-                            class="text-lg font-medium leading-6 text-gray-900"
-                          >
-                            John Doe
-                          </h3>
-                          <p class="mt-1 text-sm text-gray-600">
-                            john.doe@example.com
-                          </p>
-                          <h4
-                            class="text-lg font-medium leading-6 text-gray-900"
-                          >
-                            Joined 10/04/2021
-                          </h4>
-                          <button
-                            class="text-sm font-medium leading-6 text-gray-900 outline-none focus:outline-none border-none"
-                          >
-                            Remove
-                          </button>
+                  <div class="mt-5 md:mt-0 md:col-span-3 mx-4 md:mx-0">
+                    <div class="shadow rounded-xl bg-white sm:overflow-hidden">
+                      <div class="px-4 py-5 bg-white rounded-xl space-y-6 sm:p-6">
+                        <div class="grid grid-cols-6 gap-6">
+                          <div class="col-span-6 grid grid-cols-12 gap-6">
+                            <h3
+                              class="text-lg font-medium leading-6 text-gray-900 col-span-6 sm:col-span-2 row-start-1"
+                            >
+                            #FLT0000001
+                            </h3>
+                            <div
+                              class="flex justify-between col-span-12 sm:col-span-8 row-start-2 sm:row-start-1"
+                            >
+                            <div class="grid text-center">
+                              <p class="text-sm text-gray-600">Date</p>
+                              <h5
+                                class="text-sm font-medium leading-6 text-gray-900"
+                              >
+                                20/04/2021
+                              </h5>
+                            </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Orders</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  16
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Net Total</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  250 GBP
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Shipping</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  32 GBP
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">
+                                  Proceeds Total
+                                </p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  230 GBP
+                                </h5>
+                              </div>
+                            </div>
+                            <div
+                              class="col-span-6 sm:col-span-2 ml-auto row-start-1"
+                            >
+                              <button
+                                type="button"
+                                class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                              >
+                                View
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-
-                      <div class="border-t border-gray-200"></div>
-                      <div class="grid grid-cols-6 gap-6">
-                        <div
-                          class="col-span-6 flex items-center justify-between"
-                        >
-                          <h3
-                            class="text-lg font-medium leading-6 text-gray-900"
-                          >
-                            John Doe
-                          </h3>
-                          <p class="mt-1 text-sm text-gray-600">
-                            john.doe@example.com
-                          </p>
-                          <h4
-                            class="text-lg font-medium leading-6 text-gray-900"
-                          >
-                            Joined 10/04/2021
-                          </h4>
-                          <button
-                            class="text-sm font-medium leading-6 text-gray-900 outline-none focus:outline-none border-none"
-                          >
-                            Remove
-                          </button>
+  
+                        <div class="border-t border-gray-200"></div>
+                        <div class="grid grid-cols-6 gap-6">
+                          <div class="col-span-6 grid grid-cols-12 gap-6">
+                            <h3
+                              class="text-lg font-medium leading-6 text-gray-900 col-span-6 sm:col-span-2 row-start-1"
+                            >
+                            #FLT0000002
+                            </h3>
+                            <div
+                              class="flex justify-between col-span-12 sm:col-span-8 row-start-2 sm:row-start-1"
+                            >
+                            <div class="grid text-center">
+                              <p class="text-sm text-gray-600">Date</p>
+                              <h5
+                                class="text-sm font-medium leading-6 text-gray-900"
+                              >
+                                20/04/2021
+                              </h5>
+                            </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Orders</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  16
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Net Total</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  250 GBP
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Shipping</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  32 GBP
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">
+                                  Proceeds Total
+                                </p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  230 GBP
+                                </h5>
+                              </div>
+                            </div>
+                            <div
+                              class="col-span-6 sm:col-span-2 ml-auto row-start-1"
+                            >
+                              <button
+                                type="button"
+                                class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                              >
+                                View
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border-t border-gray-200"></div>
+                        <div class="grid grid-cols-6 gap-6">
+                          <div class="col-span-6 grid grid-cols-12 gap-6">
+                            <h3
+                              class="text-lg font-medium leading-6 text-gray-900 col-span-6 sm:col-span-2 row-start-1"
+                            >
+                            #FLT0000003
+                            </h3>
+                            <div
+                              class="flex justify-between col-span-12 sm:col-span-8 row-start-2 sm:row-start-1"
+                            >
+                            <div class="grid text-center">
+                              <p class="text-sm text-gray-600">Date</p>
+                              <h5
+                                class="text-sm font-medium leading-6 text-gray-900"
+                              >
+                                20/04/2021
+                              </h5>
+                            </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Orders</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  16
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Net Total</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  250 GBP
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">Shipping</p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  32 GBP
+                                </h5>
+                              </div>
+                              <div class="grid text-center">
+                                <p class="text-sm text-gray-600">
+                                  Proceeds Total
+                                </p>
+                                <h5
+                                  class="text-sm font-medium leading-6 text-gray-900"
+                                >
+                                  230 GBP
+                                </h5>
+                              </div>
+                            </div>
+                            <div
+                              class="col-span-6 sm:col-span-2 ml-auto row-start-1"
+                            >
+                              <button
+                                type="button"
+                                class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                              >
+                                View
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="flex justify-end mx-4 md:mx-0">
-              <button
-                type="button"
-                class="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
-                Cancel
-              </button>
-              <button
-                type="submit"
-                class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              >
-                Save
-              </button>
-            </div>
-          </form>
+          </div>
         </div>
       </main>
 
